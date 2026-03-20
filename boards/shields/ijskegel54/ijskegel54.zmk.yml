@@ -1,0 +1,17 @@
+file_format: "1"
+id: ijskegel54
+name: ijskegel54
+type: shield
+
+url: https://github.com/ijskegel/bug54-zmk-config/
+
+features:
+  - keys
+  - studio
+
+requires:
+  - pro_micro
+
+siblings:
+  - ijskegel54_left
+  - ijskegel54_right

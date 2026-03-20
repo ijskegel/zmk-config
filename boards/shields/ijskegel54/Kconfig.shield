@@ -1,0 +1,5 @@
+config SHIELD_IJSKEGEL54_LEFT
+    def_bool $(shields_list_contains,ijskegel54_left)
+
+config SHIELD_IJSKEGEL54_RIGHT
+    def_bool $(shields_list_contains,ijskegel54_right)
