@@ -8,19 +8,19 @@
 
 
         default_layer {
-            //-----------------------------------------------   ------------------------------------------------
-            //  ESC |   1   |   2   |   3   |   4   |   5   |   |   6   |   7   |   8   |   9   |   0   |   -   |
-            //  TAB |   Q   |   W   |   E   |   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   |   [   |
-            // SHIFT|   A   |   S   |   D   |   F   |   G   |   |   H   |   J   |   K   |   L   |   ;   |   '   |
-            //  CTL |   Z   |   X   |   C   |   V   |   B   |   |   N   |   M   |   ,   |   .   |   /   | SHIFT |
-            //                      | SUPER | SYMBL | ENTER |   |  ALT  | SPACE | BKSPCE|
+            //------------------------------------------------   ------------------------------------------------
+            //  ESC  |   1   |   2   |   3   |   4   |   5   |   |   6   |   7   |   8   |   9   |   0   | BKSPCE|
+            //  TAB  |   Q   |   W   |   E   |   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   |   \   |
+            //  ESC  |   A   |   S   |   D   |   F   |   G   |   |   H   |   J   |   K   |   L   |   ;   |   '   |
+            // SHIFT |   Z   |   X   |   C   |   V   |   B   |   |   N   |   M   |   ,   |   .   |   /   | SHIFT |
+            //                       | L-CTRL| BKSPCE|  DEL  |   | ENTER | SPACE | R-CTRL|
 
             bindings = <
-                &kp ESC &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp MINUS
-                &kp TAB &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp LEFT_BRACKET
-                &kp LSHIFT &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMICOLON &kp SINGLE_QUOTE
-                &kp LCTRL &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp SLASH &kp RSHIFT
-                &kp LGUI &mo 1 &kp ENTER &kp LALT &kp SPACE &kp BACKSPACE
+                &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp BACKSPACE
+                &kp TAB &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp BACKSLASH
+                &kp ESCAPE &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMICOLON &kp SINGLE_QUOTE
+                &kp LSHIFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp SLASH &kp RSHIFT
+                &kp LCTRL &kp BACKSPACE &kp DEL &kp ENTER &kp SPACE &kp RCTRL
             >;
         };
 
