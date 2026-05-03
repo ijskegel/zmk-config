@@ -20,7 +20,24 @@
                 &kp TAB &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp BACKSLASH
                 &kp ESCAPE &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMICOLON &kp SINGLE_QUOTE
                 &kp LSHIFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp SLASH &kp RSHIFT
-                &kp LCTRL &kp BACKSPACE &kp DEL &kp ENTER &kp SPACE &kp RCTRL
+                &kp LCTRL &kp BACKSPACE &kp DEL &kp ENTER &lt 1 SPACE &kp RCTRL
+            >;
+        };
+
+        nav_fun_layer {
+            //-----------------------------------------------   ------------------------------------------------
+            // BT 0 |   F1  |   F2  |   F3  |   F4  |   F5  |   |   F6  |   F7  |  F8   |  F9   |  F10  |  F11  |
+            // BT 1 |       |       |       |       |       |   |       |       |       |       |       |  F12  |
+            // BT 2 |       |       |       |       |       |   | LEFT  | DOWN  |  UP   | RIGHT |       |       |
+            //      |       |       |       |       |       |   |       |       |       |       |       |       |
+            //                      |       |       |       |   |       |       |       |
+
+            bindings = <
+                &bt BT_SEL 0 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5     &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
+                &bt BT_SEL 1 &trans &trans &trans &trans &trans     &trans &trans &trans &trans &trans  &kp F12
+                &bt BT_SEL 2 &trans &trans &trans &trans &trans     &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans  &trans
+                &trans       &trans &trans &trans &trans &trans     &trans &trans &trans &trans &trans  &trans
+                                           &trans &trans &trans     &trans &trans &trans
             >;
         };
 
@@ -37,7 +54,7 @@
             //     &trans &kp RA(NUBS) &trans &kp NUBS &kp LS(NUBS) &trans &kp GRAVE &kp RA(N8) &kp RA(N9) &trans &trans &studio_unlock
             //     &trans &trans &trans                                    &kp RALT &trans &kp DEL
 
-        symbols_layer {
+        // navigation_layer {
             //-----------------------------------------------   ------------------------------------------------
             // BT 0 |   F1  |   F2  |   F3  |   F4  |   F5  |   |   F6  |   F7  |  F8   |  F9   |  F10  |  F11  |
             // BT 1 |       |       |       |       |       |   |       |       |       |       |       |  F12  |
@@ -45,13 +62,13 @@
             //      |       |       |       |       |       |   |       |       |       |       |       |       |
             //                      |       |       |       |   |       |       |       |
 
-            bindings = <
-                &bt BT_SEL 0 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5     &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
-                &bt BT_SEL 1 &trans &trans &trans &trans &trans     &trans &trans &trans &trans &trans  &kp F12
-                &bt BT_SEL 2 &trans &trans &trans &trans &trans     &trans &trans &trans &trans &trans  &trans
-                &trans       &trans &trans &trans &trans &trans     &trans &trans &trans &trans &trans  &trans
-                                           &trans &trans &trans     &trans &trans &trans
-            >;
-        };
+        //     bindings = <
+        //         &bt BT_SEL 0 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5     &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
+        //         &bt BT_SEL 1 &trans &trans &trans &trans &trans     &trans &trans &trans &trans &trans  &kp F12
+        //         &bt BT_SEL 2 &trans &trans &trans &trans &trans     &trans &trans &trans &trans &trans  &trans
+        //         &trans       &trans &trans &trans &trans &trans     &trans &trans &trans &trans &trans  &trans
+        //                                    &trans &trans &trans     &trans &trans &trans
+        //     >;
+        // };
     };
 };
