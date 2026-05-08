@@ -12,32 +12,32 @@
             //  ESC  |   1   |   2   |   3   |   4   |   5   |   |   6   |   7   |   8   |   9   |   0   | BKSPCE|
             //  TAB  |   Q   |   W   |   E   |   R   |   T   |   |   Y   |   U   |   I   |   O   |   P   |   \   |
             //  ESC  |   A   |   S   |   D   |   F   |   G   |   |   H   |   J   |   K   |   L   |   ;   |   '   |
-            // SHIFT |L-ALT/Z|   X   |   C   |   V   |   B   |   |   N   |   M   |   ,   |   .   |   /   | SHIFT |
-            //                       | L-CTRL| BKSPCE|  DEL  |   | ENTER | SPACE | L-GUI |
+            // SHIFT |   Z   |   X   |   C   |   V   |   B   |   |   N   |   M   |   ,   |   .   |   /   | SHIFT |
+            //                       | L-ALT | L-CTRL| BKSPCE|   | ENTER | SPACE | L-GUI |
 
             bindings = <
                 &kp GRAVE &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0 &kp BACKSPACE
                 &kp TAB &kp Q &kp W &kp E &kp R &kp T &kp Y &kp U &kp I &kp O &kp P &kp BACKSLASH
                 &kp ESCAPE &kp A &kp S &kp D &kp F &kp G &kp H &kp J &kp K &kp L &kp SEMICOLON &kp SINGLE_QUOTE
-                &kp LSHIFT &mt LALT Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp SLASH &kp RSHIFT
-                &kp LCTRL &kp BACKSPACE &kp DEL &kp ENTER &lt 1 SPACE &kp LGUI
+                &kp LSHIFT &kp Z &kp X &kp C &kp V &kp B &kp N &kp M &kp COMMA &kp DOT &kp SLASH &kp RSHIFT
+                &kp LALT &kp LCTRL &kp BACKSPACE &kp ENTER &lt 1 SPACE &kp LGUI
             >;
         };
 
         nav_fun_layer {
             //-----------------------------------------------   ------------------------------------------------
             // BT 0 |   F1  |   F2  |   F3  |   F4  |   F5  |   |   F6  |   F7  |  F8   |  F9   |  F10  |  F11  |
-            // BT 1 |       |       |       |       |       |   | HOME  | PGDWN | PGUP  |  END  |       |  F12  |
-            // BT 2 |       |       |       |       |       |   | LEFT  | DOWN  |  UP   | RIGHT |       |       |
-            // BTCLR|       |       |       |       |       |   |       |       |       |       |       | stdunl|
-            //                      |       |       |       |   |       |       |       |
+            // BT 1 |       | MINUS | EQUAL | LPAR  | RPAR  |   | HOME  | PGDWN | PGUP  |  END  |       |  F12  |
+            // BT 2 |       |       |  APOS | LBKT  | RBKT  |   | LEFT  | DOWN  |  UP   | RIGHT |       |       |
+            // BTCLR|       |       | QUOTE | LBRC  | RBRC  |   |       |       |       |       |       | stdunl|
+            //                      |       |       |  DEL  |   |       |       |       |
 
             bindings = <
-                &bt BT_SEL 0 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5     &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
-                &bt BT_SEL 1 &trans &trans &trans &trans &trans     &kp HOME &kp PG_DN &kp PG_UP &kp END &trans  &kp F12
-                &bt BT_SEL 2 &trans &trans &trans &trans &trans     &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans  &trans
-                &bt BT_CLR   &trans &trans &trans &trans &trans     &trans &trans &trans &trans &trans  &studio_unlock
-                                           &trans &trans &trans     &trans &trans &trans
+                &bt BT_SEL 0 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5            &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11
+                &bt BT_SEL 1 &trans &kp MINUS &kpEQUAL &kp LPAR &kp RPAR   &kp HOME &kp PG_DN &kp PG_UP &kp END &trans  &kp F12
+                &bt BT_SEL 2 &trans &trans &kp APOS &kp LBKT &kp RBKT      &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans  &trans
+                &bt BT_CLR   &trans &trans &kp QUOTE &kp LBRC &kp RBRC     &trans &trans &trans &trans &trans  &studio_unlock
+                                           &trans &trans &kp DEL           &trans &trans &trans
             >;
         };
 
